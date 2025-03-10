@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Image Container */
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.image-text h1 {
+  font-size: 6vw; /* Adjusts size based on viewport width */
+  font-weight: bold;
+  color: #000;
+}
+
+/* Grid Container */
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Video */
+.happy-video video {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Image Row */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-row .image-container {
+  text-align: center;
+  width: 150px;
+  flex: 1 1 100px; /* Flexible width */
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image-row h3 {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Centered Paragraph */
+.centered-paragraph {
+  text-align: center;
+  max-width: 90%; /* Adjusts width based on screen */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .grid-item {
+      margin-bottom: 10px;
+  }
+
+  .image-text h1 {
+      font-size: 4rem; /* Smaller font for mobile */
+  }
+
+  .image-row {
+      gap: 10px; /* Reduce spacing between items */
+  }
+
+  .image-row .image-container {
+      width: 120px; /* Adjust item size */
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .happy-video video {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-text h1 {
+      font-size: 2rem;
+  }
+
+  .image-row .image-container {
+      width: 100px; /* Adjust item size further for small screens */
+  }
+
+  .centered-paragraph {
+      font-size: 1em; /* Reduce text size */
+  }
+}
